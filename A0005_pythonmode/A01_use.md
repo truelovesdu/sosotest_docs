@@ -1,1 +1,1 @@
-#使用python模式
+# 使用python模式
