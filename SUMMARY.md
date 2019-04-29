@@ -31,6 +31,7 @@
 * [DUBBO接口测试](A0002_user/A03_dubbo.md)
 * [全局变量](A0002_user/A04_globalvar.md)
 * [组合文本](A0002_user/A05_text.md)
+* [统计任务](A0002_user/A05_text.md)
 
 ---
 
@@ -40,6 +41,7 @@
 * [新建mock](A0003_mock/A02_createmock.md)
 * [请求mock](A0003_mock/A03_requestmock.md)
 * [mock录制](A0003_mock/A04_recodermock.md)
+* [契约测试](A0003_mock/A04_recodermock.md)
 
 ---
 
@@ -63,3 +65,4 @@
 
 * [invoke接口介绍](A0006_ci/A01_invoke.md)
 * [CI shell 脚本说明](A0006_ci/A02_cishell.md)
+* [jenkins插件介绍](A0006_ci/A02_cishell.md)
