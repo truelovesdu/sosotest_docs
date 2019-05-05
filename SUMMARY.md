@@ -63,6 +63,7 @@
 
 ### 持续集成
 
+* [token管理](A0006_ci/A01_invoke.md)
 * [invoke接口介绍](A0006_ci/A01_invoke.md)
 * [CI shell 脚本说明](A0006_ci/A02_cishell.md)
 * [jenkins插件介绍](A0006_ci/A02_cishell.md)
@@ -75,4 +76,5 @@
 * [包含断言](A0006_ci/A02_cishell.md)
 * [json递归断言](A0006_ci/A02_cishell.md)
 * [条件断言](A0006_ci/A02_cishell.md)
+* [结构断言](A0006_ci/A02_cishell.md)
 
