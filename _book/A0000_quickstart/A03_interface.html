@@ -1,0 +1,984 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>用例编写 · sosotest</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="A04_task.html" />
+    
+    
+    <link rel="prev" href="A02_user_config.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    sosotest平台介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="A00_install.html">
+            
+                <a href="A00_install.html">
+            
+                    
+                    安装部署sosotest服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    使用配置入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="A01_system_config.html">
+            
+                <a href="A01_system_config.html">
+            
+                    
+                    管理员配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="A02_user_config.html">
+            
+                <a href="A02_user_config.html">
+            
+                    
+                    用户配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="A03_interface.html">
+            
+                <a href="A03_interface.html">
+            
+                    
+                    用例编写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="A04_task.html">
+            
+                <a href="A04_task.html">
+            
+                    
+                    任务与任务集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="A05_cicd.html">
+            
+                <a href="A05_cicd.html">
+            
+                    
+                    持续集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../A0001_admin/">
+            
+                <a href="../A0001_admin/">
+            
+                    
+                    后台管理部分
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../A0001_admin/A01_login.html">
+            
+                <a href="../A0001_admin/A01_login.html">
+            
+                    
+                    管理员登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../A0001_admin/A02_user_group_manage.html">
+            
+                <a href="../A0001_admin/A02_user_group_manage.html">
+            
+                    
+                    用户小组管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../A0001_admin/A03_permission.html">
+            
+                <a href="../A0001_admin/A03_permission.html">
+            
+                    
+                    权限管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../A0001_admin/A04_admin.html">
+            
+                <a href="../A0001_admin/A04_admin.html">
+            
+                    
+                    管理员管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../A0001_admin/A05_config.html">
+            
+                <a href="../A0001_admin/A05_config.html">
+            
+                    
+                    平台配置管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../A0002_user/">
+            
+                <a href="../A0002_user/">
+            
+                    
+                    用户使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../A0002_user/A01_config.html">
+            
+                <a href="../A0002_user/A01_config.html">
+            
+                    
+                    配置管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../A0002_user/A02_http.html">
+            
+                <a href="../A0002_user/A02_http.html">
+            
+                    
+                    HTTP接口测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../A0002_user/A03_dubbo.html">
+            
+                <a href="../A0002_user/A03_dubbo.html">
+            
+                    
+                    DUBBO接口测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../A0002_user/A04_globalvar.html">
+            
+                <a href="../A0002_user/A04_globalvar.html">
+            
+                    
+                    全局变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../A0002_user/A05_text.html">
+            
+                <a href="../A0002_user/A05_text.html">
+            
+                    
+                    组合文本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../A0003_mock/">
+            
+                <a href="../A0003_mock/">
+            
+                    
+                    MOCK服务
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../A0003_mock/A02_createmock.html">
+            
+                <a href="../A0003_mock/A02_createmock.html">
+            
+                    
+                    新建mock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../A0003_mock/A03_requestmock.html">
+            
+                <a href="../A0003_mock/A03_requestmock.html">
+            
+                    
+                    请求mock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../A0003_mock/A04_recodermock.html">
+            
+                <a href="../A0003_mock/A04_recodermock.html">
+            
+                    
+                    mock录制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../A0004_keyword/">
+            
+                <a href="../A0004_keyword/">
+            
+                    
+                    关键字模式介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../A0004_keyword/A01_use.html">
+            
+                <a href="../A0004_keyword/A01_use.html">
+            
+                    
+                    使用关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../A0004_keyword/A02_buildin.html">
+            
+                <a href="../A0004_keyword/A02_buildin.html">
+            
+                    
+                    内置关键字介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../A0004_keyword/A03_selfdefine.html">
+            
+                <a href="../A0004_keyword/A03_selfdefine.html">
+            
+                    
+                    自定义关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../A0005_pythonmode/">
+            
+                <a href="../A0005_pythonmode/">
+            
+                    
+                    python模式介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../A0005_pythonmode/A01_use.html">
+            
+                <a href="../A0005_pythonmode/A01_use.html">
+            
+                    
+                    使用python模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../A0005_pythonmode/A02_buildin.html">
+            
+                <a href="../A0005_pythonmode/A02_buildin.html">
+            
+                    
+                    内置python函数介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../A0005_pythonmode/A03_selfdefine.html">
+            
+                <a href="../A0005_pythonmode/A03_selfdefine.html">
+            
+                    
+                    自定义python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../A0005_pythonmode/A04_ddt.html">
+            
+                <a href="../A0005_pythonmode/A04_ddt.html">
+            
+                    
+                    数据驱动DDT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../A0010_context/">
+            
+                <a href="../A0010_context/">
+            
+                    
+                    context上下文对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../A0010_context/A01_vars.html">
+            
+                <a href="../A0010_context/A01_vars.html">
+            
+                    
+                    常用变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../A0010_context/A02_functions.html">
+            
+                <a href="../A0010_context/A02_functions.html">
+            
+                    
+                    常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../A0009_data/">
+            
+                <a href="../A0009_data/">
+            
+                    
+                    数据操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../A0009_data/A01_mysqldb.html">
+            
+                <a href="../A0009_data/A01_mysqldb.html">
+            
+                    
+                    mysql数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../A0009_data/A02_redis.html">
+            
+                <a href="../A0009_data/A02_redis.html">
+            
+                    
+                    redis缓存操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../A0009_data/A03_mongo.html">
+            
+                <a href="../A0009_data/A03_mongo.html">
+            
+                    
+                    mongo数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../A0006_ci/">
+            
+                <a href="../A0006_ci/">
+            
+                    
+                    持续集成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../A0006_ci/A01_invoke.html">
+            
+                <a href="../A0006_ci/A01_invoke.html">
+            
+                    
+                    invoke接口介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../A0006_ci/A02_cishell.html">
+            
+                <a href="../A0006_ci/A02_cishell.html">
+            
+                    
+                    CI shell 脚本说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../A0007_assert/">
+            
+                <a href="../A0007_assert/">
+            
+                    
+                    断言处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../A0007_assert/A01_contains.html">
+            
+                <a href="../A0007_assert/A01_contains.html">
+            
+                    
+                    包含断言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../A0007_assert/A02_recurjson.html">
+            
+                <a href="../A0007_assert/A02_recurjson.html">
+            
+                    
+                    递归JSON断言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../A0007_assert/A03_conditionbool.html">
+            
+                <a href="../A0007_assert/A03_conditionbool.html">
+            
+                    
+                    条件断言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../A0007_assert/A04_assertstruct.html">
+            
+                <a href="../A0007_assert/A04_assertstruct.html">
+            
+                    
+                    结构断言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../A0008_errors/">
+            
+                <a href="../A0008_errors/">
+            
+                    
+                    常见错误原因
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../A0008_errors/A03_other.html">
+            
+                <a href="../A0008_errors/A03_other.html">
+            
+                    
+                    莫名其妙的错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >用例编写</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7528;&#x4F8B;&#x7F16;&#x5199;">&#x7528;&#x4F8B;&#x7F16;&#x5199;</h1>
+<p>&#x7528;&#x4F8B;&#x5206;&#x4E3A;HTTP&#x548C;DUBBO&#x4E24;&#x79CD;&#xFF0C;&#x6BCF;&#x79CD;&#x7528;&#x4F8B;&#x53C8;&#x5206;&#x4E3A;&#x5355;&#x63A5;&#x53E3;&#x548C;&#x4E1A;&#x52A1;&#x6D41;&#x7528;&#x4F8B;&#x3002;<br>
+&#x5728;&#x4F7F;&#x7528;&#x5165;&#x95E8;&#x90E8;&#x5206;&#xFF0C;&#x53EA;&#x8BB2;&#x89E3;HTTP&#x5355;&#x63A5;&#x53E3;&#x548C;&#x4E1A;&#x52A1;&#x6D41;&#x7684;&#x5165;&#x95E8;&#x4F7F;&#x7528;&#x3002;<br></p>
+<h2 id="&#x7F16;&#x5199;&#x5355;&#x63A5;&#x53E3;&#x7528;&#x4F8B;">&#x7F16;&#x5199;&#x5355;&#x63A5;&#x53E3;&#x7528;&#x4F8B;</h2>
+<p><img src="../image/&#x63A5;&#x53E3;&#x6D4B;&#x8BD5;&#x5E73;&#x53F0;&#x524D;&#x53F0;&#x4F7F;&#x7528;&#x5355;&#x63A5;&#x53E3;&#x521B;&#x5EFA;.png" alt="&#x56FE;&#x7247;"></p>
+<p>&#x63A5;&#x53E3;&#x540D;&#x79F0;&#xFF1A; &#x672C;&#x6761;&#x5355;&#x63A5;&#x53E3;&#x6570;&#x636E;&#x540D;&#x79F0;&#x6807;&#x8BC6;</p>
+<p>&#x63A5;&#x53E3;&#x63CF;&#x8FF0;&#xFF1A; &#x672C;&#x6761;&#x5355;&#x63A5;&#x53E3;&#x6570;&#x636E;&#x8BE6;&#x7EC6;&#x63CF;&#x8FF0;</p>
+<p>&#x4E1A;&#x52A1;&#x7EBF;&#xFF1A;   &#x4E00;&#x7EA7;&#x5206;&#x7EC4;</p>
+<p>&#x6A21;&#x5757;&#xFF1A;     &#x4E8C;&#x7EA7;&#x5206;&#x7EC4;</p>
+<p>&#x6765;&#x6E90;&#xFF1A;     &#x8868;&#x793A;&#x88AB;&#x6D4B;&#x63A5;&#x53E3;&#x6240;&#x5C5E;&#x5E73;&#x53F0;</p>
+<p>&#x4F18;&#x5148;&#x7EA7;&#xFF1A;   &#x6B64;&#x6761;&#x7528;&#x4F8B;&#x7684;&#x4F18;&#x5148;&#x7EA7;</p>
+<p>&#x51C6;&#x5907;&#xFF1A;   &#x5728;&#x51C6;&#x5907;&#x4E2D;&#x5B9A;&#x4E49;&#x4E00;&#x4E9B;&#x521D;&#x59CB;&#x53D8;&#x91CF;&#xFF0C;&#x4F8B;&#x5982;&#x6267;&#x884C;&#x767B;&#x5F55;&#x3001;&#x6267;&#x884C;&#x5176;&#x4ED6;&#x63A5;&#x53E3;&#x7528;&#x4F8B;&#xFF0C;&#x8C03;&#x7528;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7EC4;&#x5408;&#x6587;&#x672C;&#x7B49;&#x3002;</p>
+<p>&#x6267;&#x884C;&#x4FE1;&#x606F;&#xFF1A;   &#x6309;&#x7167;HTTP&#x534F;&#x8BAE;&#x586B;&#x5165;&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#x3001;&#x8BF7;&#x6C42;url&#x3001;&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x3001;&#x8BF7;&#x6C42;&#x5934;&#x3001;&#x8BF7;&#x6C42;&#x4F53;&#x7B49;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x65AD;&#x8A00;&#x6062;&#x590D;&#xFF1A;    &#x666E;&#x901A;&#x6A21;&#x5F0F;&#x4E3B;&#x8981;&#x662F;&#x7528; ASSERT() &#x5173;&#x952E;&#x5B57;&#x8FDB;&#x884C;&#x65AD;&#x8A00;&#xFF0C;&#x6216;&#x8005; ASSERT_STRUCT() &#x5173;&#x952E;&#x5B57;&#x6765;&#x65AD;&#x8A00;&#x7ED3;&#x6784;&#x3002;</p>
+<p>&#x8C03;&#x8BD5;&#xFF1A;    &#x5FEB;&#x6377;&#x7684;&#x5728;&#x7F16;&#x5199;&#x7528;&#x4F8B;&#x65F6;&#x8C03;&#x8BD5;&#x63A5;&#x53E3;&#x7528;&#x4F8B;&#x3002;&#x70B9;&#x51FB;&#x63A5;&#x53E3;&#x8C03;&#x8BD5;&#x533A;&#x57DF;&#x7684;&#x73AF;&#x5883;&#x6309;&#x94AE;&#xFF0C;&#x53EF;&#x76F4;&#x63A5;&#x5728;&#x9009;&#x62E9;&#x7684;&#x73AF;&#x5883;&#x4E2D;&#x8C03;&#x8BD5;&#x7528;&#x4F8B;&#x3002;&#xFF08;&#x9700;&#x8981;&#x5728;&#x8C03;&#x8BD5;&#x73AF;&#x5883;&#x4E0B;&#x914D;&#x7F6E;&#x88AB;&#x6D4B;&#x670D;&#x52A1;&#x7684;&#x8BF7;&#x6C42;&#x5730;&#x5740;&#xFF09;</p>
+<h2 id="&#x7F16;&#x5199;&#x4E1A;&#x52A1;&#x6D41;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;">&#x7F16;&#x5199;&#x4E1A;&#x52A1;&#x6D41;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;</h2>
+<p>&#x4E1A;&#x52A1;&#x6D41;&#x4E3A;&#x591A;&#x4E2A;&#x4E1A;&#x52A1;&#x573A;&#x666F;&#x7528;&#x4F8B;&#xFF0C;&#x4E00;&#x822C;&#x662F;&#x591A;&#x4E2A;&#x63A5;&#x53E3;&#x4E32;&#x8054;&#x8D77;&#x6765;&#x7684;&#x573A;&#x666F;&#x3002;&#x4E1A;&#x52A1;&#x6D41;&#x5206;&#x4E3A;&#x4E1A;&#x52A1;&#x6D41;&#x4FE1;&#x606F;&#x548C;&#x6B65;&#x9AA4;&#x4FE1;&#x606F;&#xFF0C;
+&#x5176;&#x4E2D;&#x6B65;&#x9AA4;&#x4FE1;&#x606F;&#x4E0E;&#x5355;&#x63A5;&#x53E3;&#x7528;&#x4F8B;&#x76F8;&#x4F3C;&#xFF0C;&#x5305;&#x542B;&#x5404;&#x7C7B;&#x6267;&#x884C;&#x4FE1;&#x606F;&#x3002;<br>
+<br>
+&#x4E1A;&#x52A1;&#x6D41;&#x7528;&#x4F8B;&#x53EF;&#x76F4;&#x63A5;&#x5F15;&#x7528;&#x5DF2;&#x7F16;&#x5199;&#x597D;&#x7684;&#x5355;&#x63A5;&#x53E3;&#xFF1A;</p>
+<p><img src="../image/&#x63A5;&#x53E3;&#x6D4B;&#x8BD5;&#x5E73;&#x53F0;&#x540E;&#x53F0;&#x4E1A;&#x52A1;&#x6D41;&#x9009;&#x62E9;&#x5355;&#x63A5;&#x53E3;&#x9875;&#x9762;.png" alt="&#x56FE;&#x7247;"></p>
+<p><img src="../image/&#x63A5;&#x53E3;&#x6D4B;&#x8BD5;&#x5E73;&#x53F0;&#x524D;&#x53F0;&#x4F7F;&#x7528;&#x4E1A;&#x52A1;&#x6D41;&#x540C;&#x6B65;&#x4E0E;&#x65B0;&#x589E;&#x6B65;&#x9AA4;.png" alt="&#x56FE;&#x7247;"></p>
+<p>&#x540C;&#x6B65;&#xFF1A;&#x52FE;&#x9009;&#x540C;&#x6B65;&#x65F6;&#xFF0C;&#x672C;&#x6B65;&#x9AA4;&#x5728;&#x4E1A;&#x52A1;&#x6D41;&#x4E2D;&#x4FEE;&#x6539;&#x4E0D;&#x751F;&#x6548;&#xFF0C;&#x4E0E;&#x5355;&#x63A5;&#x53E3;&#x6570;&#x636E;&#x4E00;&#x81F4;&#xFF0C;&#x4EE5;&#x5355;&#x63A5;&#x53E3;&#x4E3A;&#x51C6;&#xFF0C;&#x5355;&#x63A5;&#x53E3;&#x88AB;&#x4FEE;&#x6539;&#x65F6;&#xFF0C;&#x672C;&#x6B65;&#x9AA4;&#x4F1A;&#x540C;&#x6B65;&#x4FEE;&#x6539;</p>
+<p>&#x65B0;&#x589E;&#x6B65;&#x9AA4;&#xFF1A;&#x70B9;&#x51FB;&#x7F6E;&#x7070;&#x6B65;&#x9AA4;&#x7684;&#x6587;&#x672C;&#x6846;</p>
+<p>&#x65B0;&#x589E;&#x6B65;&#x9AA4;&#x540E;&#x70B9;&#x51FB;&#x6B65;&#x9AA4;&#x53F3;&#x4FA7;&#x7684;&#x7EFF;&#x8272;&#x7F16;&#x8F91;&#x6309;&#x94AE;&#xFF0C;&#x8F93;&#x5165;&#x65B0;&#x7684;&#x6B65;&#x9AA4;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x53BB;&#x6389;&#x52FE;&#x9009;&#xFF0C;&#x5728;&#x6B65;&#x9AA4;1&#x4E2D;&#x62FF;&#x5230;&#x8FD4;&#x56DE;&#x503C;&#x89E3;&#x6790;&#x540E;&#x5C06;&#x67D0;&#x4E2A;&#x503C;&#x4F20;&#x9012;&#x5230;&#x4E0B;&#x4E2A;&#x63A5;&#x53E3;&#x7684;&#x53C2;&#x6570;&#x4E2D;&#x8FDB;&#x884C;&#x8BF7;&#x6C42;&#x793A;&#x4F8B;&#x3002;</p>
+<p><img src="../image/&#x63A5;&#x53E3;&#x6D4B;&#x8BD5;&#x5E73;&#x53F0;&#x524D;&#x53F0;&#x4E1A;&#x52A1;&#x6D41;&#x53D8;&#x91CF;&#x4F20;&#x9012;&#x793A;&#x4F8B;.png" alt="&#x56FE;&#x7247;"></p>
+<p>&#x5728;&#x8C03;&#x8BD5;&#x4E2D;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8FD9;&#x4E2A;&#x8BF7;&#x6C42;&#x7684;&#x53C2;&#x6570;&#xFF0C;testVal&#x53D8;&#x91CF;&#x5DF2;&#x7ECF;&#x88AB;&#x89E3;&#x6790;&#x4E3A; &quot;baidu&quot;</p>
+<p><img src="../image/&#x63A5;&#x53E3;&#x6D4B;&#x8BD5;&#x5E73;&#x53F0;&#x524D;&#x53F0;&#x4F7F;&#x7528;&#x4E1A;&#x52A1;&#x6D41;&#x53D8;&#x91CF;&#x4F20;&#x9012;&#x8C03;&#x8BD5;&#x7ED3;&#x679C;.png" alt="&#x56FE;&#x7247;"></p>
+<p>&#x70B9;&#x51FB;&#x4FDD;&#x5B58;&#xFF0C;&#x5B58;&#x50A8;&#x6570;&#x636E; <br></p>
+<p>&#x4E1A;&#x52A1;&#x6D41;&#x4E2D;&#xFF0C;&#x540E;&#x7EED;&#x6B65;&#x9AA4;&#x53EF;&#x4EE5;&#x5F15;&#x7528;&#x524D;&#x9762;&#x6B65;&#x9AA4;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x4EE5;&#x53CA;&#x524D;&#x9762;&#x6B65;&#x9AA4;&#x7684;&#x767B;&#x5F55;&#x4FE1;&#x606F;&#x7B49;&#x3002;<br></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="A02_user_config.html" class="navigation navigation-prev " aria-label="Previous page: 用户配置">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="A04_task.html" class="navigation navigation-next " aria-label="Next page: 任务与任务集">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"用例编写","level":"1.3.3","depth":2,"next":{"title":"任务与任务集","level":"1.3.4","depth":2,"path":"A0000_quickstart/A04_task.md","ref":"A0000_quickstart/A04_task.md","articles":[]},"previous":{"title":"用户配置","level":"1.3.2","depth":2,"path":"A0000_quickstart/A02_user_config.md","ref":"A0000_quickstart/A02_user_config.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","theme-comscore","splitter"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"sosotest","gitbook":"*","theme-default":{"showLevel":true}},"file":{"path":"A0000_quickstart/A03_interface.md","mtime":"2019-06-19T09:35:09.397Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-19T14:58:27.203Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

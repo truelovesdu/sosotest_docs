@@ -1,0 +1,977 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>mock录制 · sosotest</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../A0004_keyword/" />
+    
+    
+    <link rel="prev" href="A03_requestmock.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    sosotest平台介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../A0000_quickstart/A00_install.html">
+            
+                <a href="../A0000_quickstart/A00_install.html">
+            
+                    
+                    安装部署sosotest服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../A0000_quickstart/">
+            
+                <a href="../A0000_quickstart/">
+            
+                    
+                    使用配置入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../A0000_quickstart/A01_system_config.html">
+            
+                <a href="../A0000_quickstart/A01_system_config.html">
+            
+                    
+                    管理员配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../A0000_quickstart/A02_user_config.html">
+            
+                <a href="../A0000_quickstart/A02_user_config.html">
+            
+                    
+                    用户配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../A0000_quickstart/A03_interface.html">
+            
+                <a href="../A0000_quickstart/A03_interface.html">
+            
+                    
+                    用例编写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../A0000_quickstart/A04_task.html">
+            
+                <a href="../A0000_quickstart/A04_task.html">
+            
+                    
+                    任务与任务集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../A0000_quickstart/A05_cicd.html">
+            
+                <a href="../A0000_quickstart/A05_cicd.html">
+            
+                    
+                    持续集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../A0001_admin/">
+            
+                <a href="../A0001_admin/">
+            
+                    
+                    后台管理部分
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../A0001_admin/A01_login.html">
+            
+                <a href="../A0001_admin/A01_login.html">
+            
+                    
+                    管理员登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../A0001_admin/A02_user_group_manage.html">
+            
+                <a href="../A0001_admin/A02_user_group_manage.html">
+            
+                    
+                    用户小组管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../A0001_admin/A03_permission.html">
+            
+                <a href="../A0001_admin/A03_permission.html">
+            
+                    
+                    权限管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../A0001_admin/A04_admin.html">
+            
+                <a href="../A0001_admin/A04_admin.html">
+            
+                    
+                    管理员管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../A0001_admin/A05_config.html">
+            
+                <a href="../A0001_admin/A05_config.html">
+            
+                    
+                    平台配置管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../A0002_user/">
+            
+                <a href="../A0002_user/">
+            
+                    
+                    用户使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../A0002_user/A01_config.html">
+            
+                <a href="../A0002_user/A01_config.html">
+            
+                    
+                    配置管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../A0002_user/A02_http.html">
+            
+                <a href="../A0002_user/A02_http.html">
+            
+                    
+                    HTTP接口测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../A0002_user/A03_dubbo.html">
+            
+                <a href="../A0002_user/A03_dubbo.html">
+            
+                    
+                    DUBBO接口测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../A0002_user/A04_globalvar.html">
+            
+                <a href="../A0002_user/A04_globalvar.html">
+            
+                    
+                    全局变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../A0002_user/A05_text.html">
+            
+                <a href="../A0002_user/A05_text.html">
+            
+                    
+                    组合文本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    MOCK服务
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="A02_createmock.html">
+            
+                <a href="A02_createmock.html">
+            
+                    
+                    新建mock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="A03_requestmock.html">
+            
+                <a href="A03_requestmock.html">
+            
+                    
+                    请求mock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.3" data-path="A04_recodermock.html">
+            
+                <a href="A04_recodermock.html">
+            
+                    
+                    mock录制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../A0004_keyword/">
+            
+                <a href="../A0004_keyword/">
+            
+                    
+                    关键字模式介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../A0004_keyword/A01_use.html">
+            
+                <a href="../A0004_keyword/A01_use.html">
+            
+                    
+                    使用关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../A0004_keyword/A02_buildin.html">
+            
+                <a href="../A0004_keyword/A02_buildin.html">
+            
+                    
+                    内置关键字介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../A0004_keyword/A03_selfdefine.html">
+            
+                <a href="../A0004_keyword/A03_selfdefine.html">
+            
+                    
+                    自定义关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../A0005_pythonmode/">
+            
+                <a href="../A0005_pythonmode/">
+            
+                    
+                    python模式介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../A0005_pythonmode/A01_use.html">
+            
+                <a href="../A0005_pythonmode/A01_use.html">
+            
+                    
+                    使用python模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../A0005_pythonmode/A02_buildin.html">
+            
+                <a href="../A0005_pythonmode/A02_buildin.html">
+            
+                    
+                    内置python函数介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../A0005_pythonmode/A03_selfdefine.html">
+            
+                <a href="../A0005_pythonmode/A03_selfdefine.html">
+            
+                    
+                    自定义python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../A0005_pythonmode/A04_ddt.html">
+            
+                <a href="../A0005_pythonmode/A04_ddt.html">
+            
+                    
+                    数据驱动DDT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../A0010_context/">
+            
+                <a href="../A0010_context/">
+            
+                    
+                    context上下文对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../A0010_context/A01_vars.html">
+            
+                <a href="../A0010_context/A01_vars.html">
+            
+                    
+                    常用变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../A0010_context/A02_functions.html">
+            
+                <a href="../A0010_context/A02_functions.html">
+            
+                    
+                    常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../A0009_data/">
+            
+                <a href="../A0009_data/">
+            
+                    
+                    数据操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../A0009_data/A01_mysqldb.html">
+            
+                <a href="../A0009_data/A01_mysqldb.html">
+            
+                    
+                    mysql数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../A0009_data/A02_redis.html">
+            
+                <a href="../A0009_data/A02_redis.html">
+            
+                    
+                    redis缓存操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../A0009_data/A03_mongo.html">
+            
+                <a href="../A0009_data/A03_mongo.html">
+            
+                    
+                    mongo数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../A0006_ci/">
+            
+                <a href="../A0006_ci/">
+            
+                    
+                    持续集成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../A0006_ci/A01_invoke.html">
+            
+                <a href="../A0006_ci/A01_invoke.html">
+            
+                    
+                    invoke接口介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../A0006_ci/A02_cishell.html">
+            
+                <a href="../A0006_ci/A02_cishell.html">
+            
+                    
+                    CI shell 脚本说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../A0007_assert/">
+            
+                <a href="../A0007_assert/">
+            
+                    
+                    断言处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../A0007_assert/A01_contains.html">
+            
+                <a href="../A0007_assert/A01_contains.html">
+            
+                    
+                    包含断言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../A0007_assert/A02_recurjson.html">
+            
+                <a href="../A0007_assert/A02_recurjson.html">
+            
+                    
+                    递归JSON断言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../A0007_assert/A03_conditionbool.html">
+            
+                <a href="../A0007_assert/A03_conditionbool.html">
+            
+                    
+                    条件断言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../A0007_assert/A04_assertstruct.html">
+            
+                <a href="../A0007_assert/A04_assertstruct.html">
+            
+                    
+                    结构断言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../A0008_errors/">
+            
+                <a href="../A0008_errors/">
+            
+                    
+                    常见错误原因
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../A0008_errors/A03_other.html">
+            
+                <a href="../A0008_errors/A03_other.html">
+            
+                    
+                    莫名其妙的错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >mock录制</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="mock&#x5F55;&#x5236;">mock&#x5F55;&#x5236;</h1>
+<p>mock&#x5F55;&#x5236;&#x662F;sosotest&#x7684;&#x4E00;&#x4E2A;&#x7279;&#x8272;&#x529F;&#x80FD;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#x73AF;&#x5883;&#x4E2D;&#x914D;&#x7F6E;&#x670D;&#x52A1;&#x7684;&#x8BF7;&#x6C42;&#x5730;&#x5740;&#xFF0C;&#x7136;&#x540E;&#x914D;&#x7F6E;&#x5F55;&#x5236;&#x53C2;&#x6570;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;mock&#x670D;&#x52A1;&#x6765;&#x5F55;&#x5236;&#x88AB;mock&#x670D;&#x52A1;&#x7684;&#x63A5;&#x53E3;&#x4FE1;&#x606F;&#x3002;<br>
+&#x4F8B;&#x5982;&#x670D;&#x52A1;http-testservice&#x6709;&#x63A5;&#x53E3;/getuser&#xFF0C;&#x5728;&#x73AF;&#x5883;key&#x4E3A;test1&#x7684;&#x8BF7;&#x6C42;&#x5730;&#x5740;&#x4E3A;<a href="http://testservice.com&#x3002;" target="_blank">http://testservice.com&#x3002;</a><br>
+&#x6B64;&#x65F6;&#x7528;url<br>
+<a href="http://127.0.0.1/mock/http-testservice/common/test1/getuser?id=1" target="_blank">http://127.0.0.1/mock/http-testservice/common/test1/getuser?id=1</a><br>
+&#x6765;&#x8BBF;&#x95EE;mock&#x670D;&#x52A1;&#xFF0C;&#x5982;&#x679C;mock&#x5E73;&#x53F0;&#x6CA1;&#x6709;&#x6B64;mock&#x4FE1;&#x606F;&#xFF0C;mock&#x670D;&#x52A1;&#x5C06;&#x4F1A;&#x53D1;&#x9001;&#x8BF7;&#x6C42; <a href="http://testservice.com/getuser?id=1" target="_blank">http://testservice.com/getuser?id=1</a> &#x5230;test1&#x7684;&#x8BF7;&#x6C42;&#x5730;&#x5740;&#xFF0C;
+&#x7136;&#x540E;&#x83B7;&#x53D6;&#x5230;&#x54CD;&#x5E94;&#x540E;&#xFF0C;&#x5C06;&#x63A5;&#x53E3;&#x4FE1;&#x606F;&#x5F55;&#x5236;&#x5230;&#x5E73;&#x53F0;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x5B9E;&#x9645;&#x7ED3;&#x679C;&#x662F;mock&#x8C03;&#x7528;&#x65B9;&#x3002;<br>
+<br>
+&#x9ED8;&#x8BA4;&#x5F55;&#x5236;&#x65F6;&#xFF0C;&#x53EA;&#x5F55;&#x5236;&#x8BF7;&#x6C42;&#x7684;url&#x4FE1;&#x606F;&#xFF0C;&#x8BF7;&#x6C42;&#x7684;param&#x3001;body&#x3001;header&#x7B49;&#x9ED8;&#x8BA4;&#x4E0D;&#x53D8;&#x5F55;&#x5236;&#x3002;&#x5982;&#x679C;&#x8981;&#x5B9A;&#x5236;&#x5F55;&#x5236;&#x65B9;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x65B9;&#x5F0F;&#xFF1A;<br>
+&#x5728;&#x73AF;&#x5883;key&#x540E;&#x9762;&#x52A0;&#x5165;---rec&#xFF0C;&#x7136;&#x540E;&#x5728;---rec&#x540E;&#x52A0;&#x5165;&#x8981;&#x5F55;&#x5236;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x4F8B;&#x5982;-no -all -header -param -body <br>
+&#x4E3E;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;<br></p>
+<blockquote>
+<p>&#x4E0D;&#x5F55;&#x5236;&#x4EFB;&#x4F55;&#x4FE1;&#x606F;&#xFF0C;&#x53EA;&#x662F;&#x5B9E;&#x65F6;&#x7684;&#x83B7;&#x53D6;&#x5B9E;&#x9645;&#x670D;&#x52A1;&#x7684;&#x54CD;&#x5E94;&#x7ED3;&#x679C;&#x5E76;&#x8FD4;&#x56DE;<br>
+<a href="http://127.0.0.1/mock/http-testservice/common/test1---rec-no/getuser?id=1" target="_blank">http://127.0.0.1/mock/http-testservice/common/test1---rec-no/getuser?id=1</a>  <br></p>
+<p>&#x5F55;&#x5236;&#x6240;&#x6709;&#x4FE1;&#x606F;(url/param/header/body)&#x5230;mock&#x6570;&#x636E;<br>
+<a href="http://127.0.0.1/mock/http-testservice/common/test1---rec-all/getuser?id=1" target="_blank">http://127.0.0.1/mock/http-testservice/common/test1---rec-all/getuser?id=1</a>  </p>
+<p>&#x5F55;&#x5236;url&#x548C;&#x8BF7;&#x6C42;&#x884C;&#x7684;&#x53C2;&#x6570;&#x4FE1;&#x606F;&#x5230;mock&#x6570;&#x636E;<br>
+<a href="http://127.0.0.1/mock/http-testservice/common/test1---rec-param/getuser?id=1" target="_blank">http://127.0.0.1/mock/http-testservice/common/test1---rec-param/getuser?id=1</a> </p>
+<p>&#x5F55;&#x5236;url&#x548C;&#x8BF7;&#x6C42;&#x4F53;&#x7684;body&#x4FE1;&#x606F;&#x5230;mock&#x6570;&#x636E;<br>
+<a href="http://127.0.0.1/mock/http-testservice/common/test1---rec-body/getuser?id=1" target="_blank">http://127.0.0.1/mock/http-testservice/common/test1---rec-body/getuser?id=1</a> </p>
+<p>&#x5F55;&#x5236;url&#x3001;&#x8BF7;&#x6C42;&#x884C;&#x7684;&#x53C2;&#x6570;&#x4FE1;&#x606F;&#x548C;&#x8BF7;&#x6C42;&#x4F53;&#x7684;body&#x4FE1;&#x606F;&#x5230;mock&#x6570;&#x636E;<br>
+<a href="http://127.0.0.1/mock/http-testservice/common/test1---rec-param-body/getuser?id=1" target="_blank">http://127.0.0.1/mock/http-testservice/common/test1---rec-param-body/getuser?id=1</a> </p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="A03_requestmock.html" class="navigation navigation-prev " aria-label="Previous page: 请求mock">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../A0004_keyword/" class="navigation navigation-next " aria-label="Next page: 关键字模式介绍">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"mock录制","level":"1.6.3","depth":2,"next":{"title":"关键字模式介绍","level":"1.7","depth":1,"path":"A0004_keyword/README.md","ref":"A0004_keyword/README.md","articles":[{"title":"使用关键字","level":"1.7.1","depth":2,"path":"A0004_keyword/A01_use.md","ref":"A0004_keyword/A01_use.md","articles":[]},{"title":"内置关键字介绍","level":"1.7.2","depth":2,"path":"A0004_keyword/A02_buildin.md","ref":"A0004_keyword/A02_buildin.md","articles":[]},{"title":"自定义关键字","level":"1.7.3","depth":2,"path":"A0004_keyword/A03_selfdefine.md","ref":"A0004_keyword/A03_selfdefine.md","articles":[]}]},"previous":{"title":"请求mock","level":"1.6.2","depth":2,"path":"A0003_mock/A03_requestmock.md","ref":"A0003_mock/A03_requestmock.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","theme-comscore","splitter"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"sosotest","gitbook":"*","theme-default":{"showLevel":true}},"file":{"path":"A0003_mock/A04_recodermock.md","mtime":"2019-06-17T09:17:09.030Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-19T14:58:27.203Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

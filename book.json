@@ -1,0 +1,14 @@
+{
+      "title" : "sosotest",
+      "theme-default": {
+          "showLevel": true
+      },
+      "styles": {
+          "website": "styles/website.css",
+          "ebook": "styles/ebook.css",
+          "pdf": "styles/pdf.css",
+          "mobi": "styles/mobi.css",
+          "epub": "styles/epub.css"
+       },
+      "plugins": ["expandable-chapters","theme-comscore","splitter"]
+  }

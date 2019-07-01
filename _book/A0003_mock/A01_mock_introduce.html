@@ -1,0 +1,575 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>mock介绍 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="A02_createmock.html" />
+    
+    
+    <link rel="prev" href="../A0002_user/A05_text.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    sosotest介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">后台管理部分</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../A0001_admin/A01_login.html">
+            
+                <a href="../A0001_admin/A01_login.html">
+            
+                    
+                    登录后台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../A0001_admin/A02_user_group_manage.html">
+            
+                <a href="../A0001_admin/A02_user_group_manage.html">
+            
+                    
+                    用户小组管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../A0001_admin/A03_permission.html">
+            
+                <a href="../A0001_admin/A03_permission.html">
+            
+                    
+                    权限管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../A0001_admin/A04_admin.html">
+            
+                <a href="../A0001_admin/A04_admin.html">
+            
+                    
+                    管理员管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../A0001_admin/A05_config.html">
+            
+                <a href="../A0001_admin/A05_config.html">
+            
+                    
+                    平台配置管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../A0001_admin/A06_operate.html">
+            
+                <a href="../A0001_admin/A06_operate.html">
+            
+                    
+                    操作记录管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">用户使用</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../A0002_user/A01_config.html">
+            
+                <a href="../A0002_user/A01_config.html">
+            
+                    
+                    配置管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../A0002_user/A02_http.html">
+            
+                <a href="../A0002_user/A02_http.html">
+            
+                    
+                    HTTP接口测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../A0002_user/A03_dubbo.html">
+            
+                <a href="../A0002_user/A03_dubbo.html">
+            
+                    
+                    DUBBO接口测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../A0002_user/A04_globalvar.html">
+            
+                <a href="../A0002_user/A04_globalvar.html">
+            
+                    
+                    全局变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../A0002_user/A05_text.html">
+            
+                <a href="../A0002_user/A05_text.html">
+            
+                    
+                    组合文本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">MOCK服务</li>
+        
+        
+    
+        <li class="chapter active" data-level="4.1" data-path="A01_mock_introduce.html">
+            
+                <a href="A01_mock_introduce.html">
+            
+                    
+                    mock介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="A02_createmock.html">
+            
+                <a href="A02_createmock.html">
+            
+                    
+                    新建mock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="A03_requestmock.html">
+            
+                <a href="A03_requestmock.html">
+            
+                    
+                    请求mock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="A04_recodermock.html">
+            
+                <a href="A04_recodermock.html">
+            
+                    
+                    mock录制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">关键字模式介绍</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../A0004_keyword/A01_use.html">
+            
+                <a href="../A0004_keyword/A01_use.html">
+            
+                    
+                    使用关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../A0004_keyword/A02_buildin.html">
+            
+                <a href="../A0004_keyword/A02_buildin.html">
+            
+                    
+                    内置关键字介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../A0004_keyword/A03_selfdefine.html">
+            
+                <a href="../A0004_keyword/A03_selfdefine.html">
+            
+                    
+                    自定义关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">python模式介绍</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../A0005_pythonmode/A01_use.html">
+            
+                <a href="../A0005_pythonmode/A01_use.html">
+            
+                    
+                    使用python模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../A0005_pythonmode/A02_buildin.html">
+            
+                <a href="../A0005_pythonmode/A02_buildin.html">
+            
+                    
+                    内置python函数介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../A0005_pythonmode/A03_selfdefine.html">
+            
+                <a href="../A0005_pythonmode/A03_selfdefine.html">
+            
+                    
+                    自定义python
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">持续集成</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../A0006_ci/A01_invoke.html">
+            
+                <a href="../A0006_ci/A01_invoke.html">
+            
+                    
+                    invoke接口介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../A0006_ci/A02_cishell.html">
+            
+                <a href="../A0006_ci/A02_cishell.html">
+            
+                    
+                    CI shell 脚本说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >mock介绍</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="mock&#x4ECB;&#x7ECD;">mock&#x4ECB;&#x7ECD;</h1>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../A0002_user/A05_text.html" class="navigation navigation-prev " aria-label="Previous page: 组合文本">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="A02_createmock.html" class="navigation navigation-next " aria-label="Next page: 新建mock">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"mock介绍","level":"4.1","depth":1,"next":{"title":"新建mock","level":"4.2","depth":1,"path":"A0003_mock/A02_createmock.md","ref":"A0003_mock/A02_createmock.md","articles":[]},"previous":{"title":"组合文本","level":"3.5","depth":1,"path":"A0002_user/A05_text.md","ref":"A0002_user/A05_text.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"A0003_mock/A01_mock_introduce.md","mtime":"2019-04-24T07:29:26.832Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-24T07:35:01.217Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
