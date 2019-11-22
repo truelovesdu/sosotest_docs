@@ -44,6 +44,9 @@ pip3 install -r require.txt
 
 # 7、修改配置文件
 配置根目录目录下的config.ini，具体配置参考config.ini中的注释说明。<br>
+注意事项：<br>
+1、配置文件不要用 windows的记事本编辑 会导致编码错误<br>
+2、开源版本 releaseRoot 的配置目录必须要跟自己的代码根目录一致。不然会报错误 KeyError: 'TCP-TEST01'<br>
 
 # 8、初始化数据库表结构
 进入AutotestWebD目录，执行<br>
